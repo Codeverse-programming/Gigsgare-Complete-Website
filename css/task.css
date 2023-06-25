@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+:root {
+  --font-family: "Nunito Sans";
+  --primary-color: #3a86ff;
+  --secondary-color: #0077b6;
+  --body-color: #edf6f9;
+  --body-color-two: #fffffc;
+  --ash-color: #d9d9d9;
+}
+
+body {
+  background-color: var(--body-color-two);
+  font-family: var(--font-family), sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.container .logo {
+  position: relative;
+  left: 2rem;
+  top: 1.3rem;
+  width: 34rem;
+}
+
+.logo h2 {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+}
+
+.task_selection_form {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 5rem;
+}
+
+.task_selection_form .welcome_text {
+  margin-bottom: 2rem;
+  padding-block: 1.2rem;
+  line-height: 35px;
+}
+
+.welcome_text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.welcome_text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(123, 120, 120);
+}
+
+.form_information form .all_content {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+}
+
+.form_information form .project_title {
+  margin-bottom: 1.4rem;
+  padding: 2rem;
+  max-width: 100%;
+  width: auto;
+}
+
+.project_title label {
+  text-align: center;
+  position: relative;
+  left: -5rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.project_title input {
+  border: 0;
+  outline: 1px solid var(--ash-color);
+  background-color: var(--ash-color);
+  padding-inline: 5rem;
+  width: 10rem;
+  max-width: 100%;
+  padding-block: 1.3rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project_title input::placeholder {
+  color: gray;
+  font-size: 18px;
+  font-family: var(--font-family);
+}
+
+.all_content .preffered_language {
+  margin-bottom: 1.4rem;
+  padding: 2rem;
+  max-width: 100%;
+  width: auto;
+}
+
+.preffered_language label {
+  text-align: center;
+  position: relative;
+  left: -14rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.select select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 5rem;
+  color: #fff;
+  background-color: var(--ash-color);
+  /* background-image: none; */
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em 2em;
+  background-color: var(--secondary-color);
+  transition: 0.25s all ease;
+  pointer-events: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+.select select > option {
+  font-family: var(--font-family);
+  text-align: start;
+  font-size: 18px;
+}
+
+.all_content .description {
+  margin-bottom: 1.4rem;
+  padding: 2rem;
+  max-width: 100%;
+  width: auto;
+}
+
+.description label {
+  text-align: center;
+  position: relative;
+  left: -5rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.description textarea {
+  border: 0;
+  outline: 1px solid var(--ash-color);
+  background-color: var(--ash-color);
+  padding-inline: 5rem;
+  width: 10rem;
+  max-width: 100%;
+  padding-block: 1.3rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.description textarea::placeholder{
+  color: gray;
+  font-size: 18px;
+  font-family: var(--font-family);
+}
+
+.all_content .attach_files {
+  margin-bottom: 1.4rem;
+  padding: 2rem;
+  max-width: 100%;
+  width: auto;
+  position: relative;
+  left: -8em;
+}
+
+.attach_files label {
+  text-align: center;
+  position: relative;
+  left: -5rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.attach_files .btn{
+  border: 0;
+  outline: 1px solid var(--ash-color);
+  background-color: var(--ash-color);
+  padding-inline: 5rem;
+  width: 10rem;
+  max-width: 100%;
+  padding-block: 1.3rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn::-webkit-file-upload-button{
+  display: none;
+}
+
+.attach_files .file .fake_btn{
+   background-color: #0077b6;
+   color: #edf6f9;
+   padding: 1.09rem 2em;
+   position: absolute;
+   left: top;
+   max-width: 80px;
+   height: inherit;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+}
+
+
+.submit_btn{
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  gap: 5rem;
+  padding-bottom: 3em;
+}
+
+.submit_btn .prev_btn{
+  background-color: var(--body-color);
+  outline: 3px solid var(--secondary-color);
+  padding: 1em 4em;
+  font-family: var(--font-family);
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all .24s ease-in-out;
+}
+
+.submit_btn .next_btn
+{
+  background-color: var(--secondary-color);
+  outline: 3px solid var(--secondary-color);
+  padding: 1em 4em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all .24s ease-in-out;
+}
+.submit_btn .prev_btn a{
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.submit_btn .next_btn a{
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.submit_btn .next_btn:hover{
+  background-color: #edf6f9;
+  outline: 3px solid var(--secondary-color);
+  color: #333;
+}
+.submit_btn .prev_btn:hover{
+  background-color: #edf6f9;
+  outline: 3px solid var(--secondary-color);
+  color: #333;
+}
+
+@media (max-width: 1000px) {
+  .form_information form .all_content{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .all_content .attach_files{
+    left: 0;
+  }
+
+  .preffered_language label {
+    left: auto;
+  }
+
+  .submit_btn{
+    flex-wrap: wrap;
+  }
+}

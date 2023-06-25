@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/task.css" />
+    <title>Gigshare | Application</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <h2>GigShare</h2>
+      </div>
+    </header>
+
+    <section class="task_selection_form">
+      <div class="welcome_text">
+        <h2>Welcome to Gigshare</h2>
+        <p>Tell us about your task</p>
+      </div>
+
+      <div class="form_information">
+        <form>
+          <div class="all_content">
+            <div class="project_title">
+              <label for="">
+                <small>Title of project</small>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="type in the title of your project"
+              />
+            </div>
+
+            <div class="preffered_language">
+              <label for="">
+                <small>Choose preffered language</small>
+              </label>
+              <div class="select">
+                <select name="" id="">
+                  <option value="python">Python</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="description">
+              <label for="">
+                <small>Description</small>
+              </label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="in less than 250 words, describe your task"
+              ></textarea>
+            </div>
+
+            <div class="attach_files">
+              <label for="">
+                <small>Attach files</small>
+              </label>
+              <div class="file">
+                <input type="file" id="file" name="file" class="btn" />
+                <span class="fake_btn">
+                  <i class="fa-solid fa-folder-plus"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit_btn">
+            <button class="prev_btn"><a href="./personal_info.html">Previous</a></button>
+            <button class="next_btn"><a href="./timeframe.html">Next</a></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  margin: 0;
+}
+
+:root {
+  --font-family: "Nunito Sans";
+  --primary-color: #3a86ff;
+  --secondary-color: #0077b6;
+  --body-color: #edf6f9;
+  --body-color-two: #fffffc;
+  --ash-color: #d9d9d9;
+}
+
+body {
+  background-color: var(--body-color-two);
+  font-family: var(--font-family), sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.container .logo {
+  position: relative;
+  left: 2rem;
+  top: 1.3rem;
+  width: 34rem;
+}
+
+.logo h2 {
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+}
+
+.personal_info_form {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 5rem;
+}
+
+.personal_info_form .welcome_text {
+  margin-bottom: 2rem;
+  padding-block: 1.2rem;
+  line-height: 35px;
+}
+
+.welcome_text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.welcome_text p {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(123, 120, 120);
+}
+
+.personal_info_form .form_information form .user_name {
+  margin-bottom: 1.4rem;
+  padding: 2rem;
+  max-width: 100%;
+  width: auto;
+}
+
+.user_name label {
+  text-align: center;
+  position: relative;
+  left: -7rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.user_name input {
+  border: 0;
+  outline: 1px solid var(--ash-color);
+  background-color: var(--ash-color);
+  padding-inline: 5rem;
+  width: 10rem;
+  max-width: 100%;
+  padding-block: 1.3rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+form .collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  max-width: 100%;
+  width: auto;
+}
+
+.collection .email_address label {
+  text-align: center;
+  position: relative;
+  left: -7rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.email_address input {
+  border: 0;
+  outline: 1px solid var(--ash-color);
+  background-color: var(--ash-color);
+  padding-inline: 5rem;
+  width: 10rem;
+  max-width: 100%;
+  padding-block: 1.3rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.collection .company_name label {
+  text-align: center;
+  position: relative;
+  left: -5rem;
+  display: block;
+  font-size: 20px;
+  color: rgb(93, 89, 89);
+  margin-bottom: 8px;
+}
+
+.company_name select {
+  outline: 1px solid var(--ash-color);
+  background-color: var(--ash-color);
+  width: 300px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  font: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+form .submit_btn .next_btn {
+  background-color: var(--secondary-color);
+  padding-inline: 5rem;
+  max-width: 100%;
+  padding-block: 1rem;
+  border-radius: 50px;
+  font-family: var(--font-family);
+  color: #edf6f9;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form .submit_btn .next_btn a {
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: #edf6f9;
+  text-decoration: none;
+}
+
+form input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+select>option {
+  color: gray;
+  font-size: 18px;
+  font-family: var(--font-family);
+}
+
+@media (max-width: 500px) {
+  .form_information form {
+    padding: 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome_text h2 {
+    font-size: 20px;
+  }
+
+  .welcome_text p {
+    font-size: 16px;
+  }
+}
