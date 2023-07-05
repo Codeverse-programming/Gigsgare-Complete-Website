@@ -101,7 +101,7 @@ header .container {
 .logo,
 #logo {
     /* margin: 1.2em 0 0; */
-    padding: 0 1.5em;
+    padding: 0em 1em;
 }
 
 .logo a h1 {
@@ -236,7 +236,7 @@ nav .closebtn {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10em 2em 7em;
+    padding: 7em 2em 7em;
     height: 100%
 }
 
@@ -518,7 +518,7 @@ nav .closebtn {
 
 /* TESTIMONIAL SECTION */
 .ftco-section {
-    padding: 5em 0em;
+    padding: 5em 2em;
 }
 
 .ftco-no-pt {
@@ -1074,7 +1074,7 @@ nav .closebtn {
         position: unset;
         /* width: auto; */
         height: auto;
-        overflow: visible;
+        overflow: auto;
         background: none;
         flex: 1;
         text-align: center;
