@@ -39,7 +39,6 @@ body {
   position: relative;
   text-align: center;
   vertical-align: middle;
-  top: 5rem;
 }
 
 .task_selection_form .welcome_text {
@@ -54,7 +53,7 @@ body {
 }
 
 .welcome_text p {
-  font-size: 1rex;
+  font-size: 1rem;
   font-weight: 400;
   color: rgb(123, 120, 120);
 }
@@ -66,29 +65,34 @@ body {
   position: relative;
 }
 
-.form_information form .all_content {
-  max-width: 100%;
-  margin: 0 auto;
+.all_content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0 30px;
 }
 
-.form_information form .project_title {
-  margin-bottom: 1.4rem;
-  padding: 2rem;
-  max-width: 100%;
-  width: auto;
+.title {
+  grid-column: 1/13;
 }
 
-.project_title label {
-  text-align: center;
-  position: relative;
-  left: -5rem;
-  display: block;
+.language {
+  grid-column: 1/13;
+}
+
+.description {
+  grid-column: 1/13;
+}
+
+.files {
+  grid-column: 1/13
+}
+
+.project_title {
+  margin: 0 0 3em;
+}
+
+.project_title p {
+  text-align: left;
   font-size: 20px;
   color: rgb(93, 89, 89);
   margin-bottom: 8px;
@@ -96,72 +100,66 @@ body {
 
 .project_title input {
   border: 0;
-  outline: 1px solid var(--ash-color);
+  outline: 1px solid var(--secondary-color);
   background-color: var(--ash-color);
-  padding-inline: 5rem;
-  width: 10rem;
-  max-width: 100%;
-  padding-block: 1.3rem;
+  padding: 0 0 0 1.5rem;
+  width: 90%;
+  padding-block: 1.5rem;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+}
+
+.description input {
+  padding: 0 0 0 1.5rem;
+  padding-block: 4.5rem;
 }
 
 .project_title input::placeholder {
   color: gray;
   font-size: 18px;
   font-family: var(--font-family);
-}
-
-.all_content .preffered_language {
-  margin-bottom: 1.4rem;
-  padding: 2rem;
-  max-width: 100%;
-  width: auto;
-}
-
-.preffered_language label {
   text-align: center;
-  position: relative;
-  left: -14rem;
-  display: block;
+}
+
+.project_title p {
+  text-align: left;
   font-size: 20px;
   color: rgb(93, 89, 89);
   margin-bottom: 8px;
 }
 
 .select select {
-  /* Reset Select */
-  appearance: none;
-  outline: 0;
-  border: 0;
-  box-shadow: none;
-  /* Personalize */
-  flex: 1;
-  padding: 0 5rem;
-  color: #fff;
+  outline: 1px solid var(--secondary-color);
   background-color: var(--ash-color);
-  /* background-image: none; */
-  border-radius: 50px;
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  font: 14px;
+  color: #474747;
   cursor: pointer;
+  padding-block: 1.5rem;
+  padding-inline-start: 1em;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
+
 /* Remove IE arrow */
 select::-ms-expand {
   display: none;
 }
+
 /* Custom Select wrapper */
 .select {
   position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  overflow: hidden;
 }
+
 /* Arrow */
 .select::after {
   content: "\25BC";
   position: absolute;
   top: 0;
-  right: 0;
+  bottom: 0;
+  right: 4%;
   padding: 1em 2em;
   background-color: var(--secondary-color);
   transition: 0.25s all ease;
@@ -169,72 +167,36 @@ select::-ms-expand {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
 /* Transition */
 .select:hover::after {
   color: #f39c12;
 }
 
-.select select > option {
+.select select>option {
   font-family: var(--font-family);
-  text-align: start;
-  font-size: 18px;
-}
-
-.all_content .description {
-  margin-bottom: 1.4rem;
-  padding: 2rem;
-  max-width: 100%;
-  width: auto;
-}
-
-.description label {
   text-align: center;
-  position: relative;
-  left: -5rem;
-  display: block;
+}
+
+.description p {
+  text-align: left;
   font-size: 20px;
   color: rgb(93, 89, 89);
   margin-bottom: 8px;
-}
-
-.description textarea {
-  border: 0;
-  outline: 1px solid var(--ash-color);
-  background-color: var(--ash-color);
-  padding-inline: 5rem;
-  width: 10rem;
-  max-width: 100%;
-  padding-block: 1.3rem;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-.description textarea::placeholder{
-  color: gray;
-  font-size: 18px;
-  font-family: var(--font-family);
 }
 
 .all_content .attach_files {
-  margin-bottom: 1.4rem;
-  padding: 2rem;
-  max-width: 100%;
-  width: auto;
   position: relative;
-  left: -8em;
 }
 
-.attach_files label {
-  text-align: center;
-  position: relative;
-  left: -5rem;
-  display: block;
+.attach_files p {
+  text-align: left;
   font-size: 20px;
   color: rgb(93, 89, 89);
   margin-bottom: 8px;
 }
 
-.attach_files .btn{
+.attach_files .btn {
   border: 0;
   outline: 1px solid var(--ash-color);
   background-color: var(--ash-color);
@@ -247,36 +209,46 @@ select::-ms-expand {
   transition: all 0.3s ease-in-out;
 }
 
-.btn::-webkit-file-upload-button{
+.btn::-webkit-file-upload-button {
   display: none;
 }
 
-.attach_files .file .fake_btn{
-   background-color: #0077b6;
-   color: #edf6f9;
-   padding: 1.09rem 2em;
-   position: absolute;
-   left: top;
-   max-width: 80px;
-   height: inherit;
-   border-top-right-radius: 50px;
-   border-bottom-right-radius: 50px;
+.attach_files .file .fake_btn {
+  background-color: #0077b6;
+  color: #edf6f9;
+  padding: 1.09rem 2em;
+  position: absolute;
+  left: top;
+  max-width: 80px;
+  height: inherit;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-
-.submit_btn{
+.file {
   position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-  gap: 5rem;
-  padding-bottom: 3em;
 }
 
-.submit_btn .prev_btn{
+.file::after {
+  content: "\f016";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1em 2em;
+  background-color: gray;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.submit_btn {
+  position: relative;
+  padding: 3em 0;
+}
+
+.submit_btn .prev_btn {
   background-color: var(--body-color);
   outline: 3px solid var(--secondary-color);
   padding: 1em 4em;
@@ -284,60 +256,86 @@ select::-ms-expand {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  width: 100%;
   border-radius: 50px;
   transition: all .24s ease-in-out;
+  grid-column: 1/7;
 }
 
-.submit_btn .next_btn
-{
+.submit_btn .next_btn {
   background-color: var(--secondary-color);
   outline: 3px solid var(--secondary-color);
   padding: 1em 4em;
   text-align: center;
   cursor: pointer;
   border-radius: 50px;
+  width: 100%;
   transition: all .24s ease-in-out;
+  grid-column: 7/13;
 }
-.submit_btn .prev_btn a{
+
+.submit_btn .prev_btn a {
   font-family: var(--font-family);
   font-size: 18px;
-  color: black;
+  color: var(--secondary-color);
   text-decoration: none;
+  font-weight: bold;
 }
-.submit_btn .next_btn a{
+
+.submit_btn .next_btn a {
   font-family: var(--font-family);
   font-size: 18px;
-  color: black;
+  font-weight: bold;
+  color: white;
   text-decoration: none;
 }
-.submit_btn .next_btn:hover{
+
+.submit_btn .next_btn:hover {
   background-color: #edf6f9;
   outline: 3px solid var(--secondary-color);
-  color: #333;
 }
-.submit_btn .prev_btn:hover{
-  background-color: #edf6f9;
+
+.submit_btn .next_btn:hover a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.submit_btn .prev_btn:hover a {
+  color: white;
+}
+
+.submit_btn .prev_btn:hover {
+  background-color: var(--secondary-color);
   outline: 3px solid var(--secondary-color);
-  color: #333;
+  color: black;
 }
 
-@media (max-width: 1000px) {
-  .form_information form .all_content{
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-
+@media (min-width: 1000px) {
+  .title {
+    grid-column: 1/7;
   }
 
-  .all_content .attach_files{
-    left: 0;
+  .language {
+    grid-column: 7/13;
   }
 
-  .preffered_language label {
-    left: auto;
+  .description {
+    grid-column: 1/7;
   }
 
-  .submit_btn{
-    flex-wrap: wrap;
+  .files {
+    grid-column: 7/13
+  }
+
+  .form_information {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form_information {
+    width: 60%;
+    margin: 0 auto;
   }
 }

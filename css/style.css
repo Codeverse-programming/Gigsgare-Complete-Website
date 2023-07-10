@@ -35,7 +35,7 @@ img {
 }
 
 .logo-text {
-    font-size: 2.3em;
+    font-size: 1.3em;
 }
 
 .leading {
@@ -208,7 +208,7 @@ nav .closebtn {
 }
 
 .actions {
-    margin: 0 2em 0 0;
+    /* margin: 0 2em 0 0; */
 }
 
 .actions a button {
@@ -218,7 +218,7 @@ nav .closebtn {
     color: white;
     font-weight: bold;
     /* font-size: 1.2rem; */
-    padding: 0.8em 1.8em;
+    padding: 0.4em 1.4em;
     border-radius: 25px;
     /* margin: 1.2em 0 0; */
     border: 2px solid white;
@@ -374,14 +374,15 @@ nav .closebtn {
     text-align: center;
     margin: 0 auto;
     /* border: 10px solid black; */
-    padding: 1em 2em;   
+    padding: 1em 2em;
 }
 
-.brands{
+.brands {
     /* border: 10px solid black; */
 }
-.grid{
-}
+
+.grid {}
+
 .brands img {
     width: 30%;
     height: 10vh;
@@ -915,6 +916,10 @@ nav .closebtn {
         font-size: 20px;
     }
 
+    .logo-text {
+        font-size: 2.3em;
+    }
+
     .hired-img {
         grid-column: 1/7;
     }
@@ -1083,7 +1088,7 @@ nav .closebtn {
         flex: 1;
         text-align: center;
     }
-    
+
     nav ul {
         width: 100%;
         position: unset;
@@ -1099,9 +1104,11 @@ nav .closebtn {
         font-size: 1.3rem;
         position: relative;
     }
-    nav ul li a.active{
+
+    nav ul li a.active {
         text-decoration: underline 2px solid white;
     }
+
     nav ul li a::before {
         content: '';
         position: absolute;

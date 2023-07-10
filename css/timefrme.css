@@ -25,10 +25,7 @@ body {
 }
 
 .container .logo {
-  position: relative;
-  left: 2rem;
-  top: 1.3rem;
-  width: 34rem;
+  margin: 2em;
 }
 
 .logo h2 {
@@ -41,7 +38,6 @@ body {
   position: relative;
   text-align: center;
   vertical-align: middle;
-  top: 5rem;
 }
 
 .form_container .welcome_text {
@@ -61,94 +57,96 @@ body {
   color: rgb(123, 120, 120);
 }
 
-.form_container .form {
-  max-width: 100%;
-  margin: 0 auto;
+.budget-container {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
 }
 
-.form .set_budget {
-  margin-bottom: 1.4rem;
-  padding: 2rem;
-  max-width: 100%;
-  width: auto;
+.budget-information {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
 }
 
-.set_budget label {
-  text-align: center;
+.set_budget {
+  margin-bottom: 2rem;
+  grid-column: 1/13;
+}
+
+.set_budget p {
+  text-align: left;
   display: block;
   font-size: 20px;
   color: rgb(93, 89, 89);
+  margin-bottom: 20px;
 }
 
 .set_budget select {
-  border: 0;
-  outline: 1px solid var(--ash-color);
+  outline: 1px solid var(--secondary-color);
   background-color: var(--ash-color);
-  padding: 1em 5rem;
-  width: 20rem;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  font: 14px;
+  color: #474747;
+  cursor: pointer;
+  padding-block: 1rem;
+  padding-inline-start: 1em;
   border-radius: 50px;
-  color: #333;
   transition: all 0.3s ease-in-out;
-  /* appearance: none;
-    --webkit-appearance: none;
-    --moz-appearance: none; */
 }
 
 .set_budget select optgroup {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: inherit;
   padding: 5px;
-}
-
-.form .set_duration {
-  margin-bottom: 1.4rem;
-  padding: 2rem;
-  max-width: 100%;
-  width: auto;
-}
-
-.set_duration label {
   text-align: center;
+}
+
+.set_duration {
+  margin-bottom: 1.4rem;
+  grid-column: 1/13;
+}
+
+.set_duration p {
+  text-align: left;
   display: block;
   font-size: 20px;
   color: rgb(93, 89, 89);
+  margin-bottom: 20px;
 }
 
 .set_duration select {
-  border: 0;
-  outline: 1px solid var(--ash-color);
+  outline: 1px solid var(--secondary-color);
   background-color: var(--ash-color);
-  padding: 1em 5rem;
-  width: 15rem;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  font: 14px;
+  color: #474747;
+  cursor: pointer;
+  padding-block: 1rem;
+  padding-inline-start: 1em;
   border-radius: 50px;
-  color: #333;
   transition: all 0.3s ease-in-out;
 }
 
 .set_duration select optgroup {
-  font-size: 18px;
+  font-size: 1;
   font-family: inherit;
   padding: 5px;
+  text-align: center;
 }
 
 .submit_btn {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 1rem;
+  margin-top: 5em;
   position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-  gap: 5rem;
-  padding-bottom: 3em;
 }
 
 .submit_btn .prev_btn {
@@ -159,60 +157,70 @@ body {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  width: 100%;
   border-radius: 50px;
-  transition: all 0.24s ease-in-out;
+  transition: all .24s ease-in-out;
+  grid-column: 1/7;
 }
 
 .submit_btn .next_btn {
   background-color: var(--secondary-color);
   outline: 3px solid var(--secondary-color);
   padding: 1em 4em;
-  font-family: var(--font-family);
-  font-size: 18px;
   text-align: center;
   cursor: pointer;
   border-radius: 50px;
-  color: #edf6f9;
-  transition: all 0.24s ease-in-out;
+  width: 100%;
+  transition: all .24s ease-in-out;
+  grid-column: 7/13;
 }
 
 .submit_btn .prev_btn a {
   font-family: var(--font-family);
   font-size: 18px;
-  color: black;
+  color: var(--secondary-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .submit_btn .next_btn a {
   font-family: var(--font-family);
   font-size: 18px;
-  color: black;
+  font-weight: bold;
+  color: white;
   text-decoration: none;
 }
 
 .submit_btn .next_btn:hover {
   background-color: #edf6f9;
   outline: 3px solid var(--secondary-color);
-  color: #333;
+}
+
+.submit_btn .next_btn:hover a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.submit_btn .prev_btn:hover a {
+  color: white;
 }
 
 .submit_btn .prev_btn:hover {
   background-color: var(--secondary-color);
   outline: 3px solid var(--secondary-color);
-  color: #fff;
+  color: black;
 }
 
-@media (max-width: 1000px) {
-  .submit_btn {
-    flex-wrap: wrap;
+@media (min-width: 1000px) {
+  .budget-information {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 400px) {
-  .form_container .form {
-    vertical-align: middle;
-    width: auto;
-    position: relative;
+@media (min-width: 1200px) {
+  .budget-information {
+    width: 50%;
     margin: 0 auto;
   }
 }
