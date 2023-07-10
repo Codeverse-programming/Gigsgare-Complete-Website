@@ -120,18 +120,18 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 0;
+    height: 100%;
     margin-left: 0;
-    width: 100%;
+    overflow: hidden;
+    width: 0;
     background-color: white;
-    overflow-y: hidden;
     transition: 0.5s ease;
     color: black;
     z-index: 99;
 }
 
 header .container #show-nav:checked~nav {
-    height: 100%;
+    width: 100%;
     right: 0;
     transition: 0.5s ease;
 }
@@ -373,10 +373,15 @@ nav .closebtn {
 .partnership_section {
     text-align: center;
     margin: 0 auto;
-    padding: 1em 2em;
-
+    /* border: 10px solid black; */
+    padding: 1em 2em;   
 }
 
+.brands{
+    /* border: 10px solid black; */
+}
+.grid{
+}
 .brands img {
     width: 30%;
     height: 10vh;
@@ -396,7 +401,7 @@ nav .closebtn {
     padding: 2em 0;
     height: fit-content;
     grid-column: 1/12;
-    align-self: center;
+    /* border: 10px solid black; */
 }
 
 .header_text {
@@ -944,7 +949,7 @@ nav .closebtn {
     }
 
     .brand-3 {
-        grid-column: 8/12;
+        grid-column: 8/13;
     }
 
     .brand-4 {
@@ -956,7 +961,7 @@ nav .closebtn {
     }
 
     .brand-6 {
-        grid-column: 8/12;
+        grid-column: 8/13;
     }
 
     .hero_mid_text h1 {
@@ -1074,12 +1079,11 @@ nav .closebtn {
         position: unset;
         /* width: auto; */
         height: auto;
-        overflow: auto;
         background: none;
         flex: 1;
         text-align: center;
     }
-
+    
     nav ul {
         width: 100%;
         position: unset;

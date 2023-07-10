@@ -1,78 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Gigshare | Application</title>
-    <link rel="stylesheet" href="css/personal_info.css" />
-  </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <h2>GigShare</h2>
-      </div>
-    </header>
 
-    <section class="personal_info_form">
-      <div class="welcome_text">
-        <h2>Welcome to Gigshare</h2>
-        <p>Please fill in your personal information</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Gigshare | Application</title>
+  <link rel="stylesheet" href="css/personal_info.css" />
+</head>
 
-      <div class="form_information">
-        <form action="">
-          <div class="user_name">
-            <label for="">
-              <small>Name</small>
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="type in your fullname"
-            />
-          </div>
-          <div class="collection">
-            <div class="email_address">
-              <label for="">
-                <small>Email address</small>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@email.com"
-              />
-            </div>
-            <div class="company_name">
-              <label for="">
-                <small> Company name</small>
-              </label>
-              <select name="" id="">
-                <option value="strafford">Strafford LC Company</option>
-              </select>
-            </div>
-          </div>
+<body>
+  <header class="container">
+    <div class="logo">
+      <h2>GigShare</h2>
+    </div>
+  </header>
 
-          <div class="submit_btn">
-            <button class="next_btn"><a href="./task.html">Next</a></button>
+  <section class="personal_info_form">
+    <div class="welcome_text">
+      <h2>Welcome to Gigshare</h2>
+      <p>Please fill in your personal information</p>
+    </div>
+
+    <div class="form_information">
+      <form action="">
+        <div class="input-box name">
+          <p>Full Name</p>
+          <input type="text" id="fullname" name="fullname" class="" placeholder="example@email.com" />
+        </div>
+        <div class="collection">
+          <div class="input-box email">
+            <p>Email address</p>
+            <input type="email" id="email" name="email" placeholder="example@email.com" />
           </div>
-        </form>
-      </div>
-    </section>
-  </body>
+          <div class="input-box company">
+            <p> Company name</p>
+            <select name="" id="">
+              <option value="strafford">Strafford LC Company</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="submit_btn">
+          <button class="next_btn"><a href="./task.html">Next</a></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
 </html>

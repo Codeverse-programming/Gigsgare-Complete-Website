@@ -26,10 +26,7 @@ body {
 }
 
 .container .logo {
-  position: relative;
-  left: 2rem;
-  top: 1.3rem;
-  width: 34rem;
+  margin: 2em;
 }
 
 .logo h2 {
@@ -57,9 +54,16 @@ body {
 }
 
 .welcome_text p {
-  font-size: 20px;
+  font-size: 1rex;
   font-weight: 400;
   color: rgb(123, 120, 120);
+}
+
+.form_information {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
 }
 
 .form_information form .all_content {

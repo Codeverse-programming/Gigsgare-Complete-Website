@@ -1,85 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/login.css" />
-    <title>Gigshare | Login</title>
-  </head>
-  <body>
-    <header class="container">
-      <div class="logo">
-        <h2>GigShare</h2>
-      </div>
-    </header>
 
-    <section class="login_form">
-      <div class="form-container">
-        <div class="welcome_text">
-          <h2>Welcome back</h2>
-          <p>Login to your account</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/login.css" />
+  <title>Gigshare | Login</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="logo">
+      <h2>GigShare</h2>
+    </div>
+  </header>
+
+  <section class="login_form">
+    <div class="welcome_text">
+      <h2>Welcome back</h2>
+      <p>Login to your account</p>
+    </div>
+    <div class="form-container">
+      <form action="">
+        <div class="input-box">
+          <p>Email Address</p>
+          <input type="email" id="email" name="email" class="form_control" placeholder="example@email.com" />
         </div>
-        <form action="">
-          <div class="input-box">
-            <p>Email Address</p>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form_control"
-              placeholder="example@email.com"
-            />
-          </div>
-          <div class="input-box">
-            <p>Password</p>
-            <input
-              type="password"
-              id="email"
-              name="email"
-              class="form_control"
-              placeholder="input your password"
-            />
-          </div>
-          <div class="forgot_password">
-            <p>
-              forgot your password? <a href="#" class="reset">Reset it here</a>
-            </p>
-          </div>
+        <div class="input-box">
+          <p>Password</p>
+          <input type="password" id="email" name="email" class="form_control" placeholder="input your password" />
+        </div>
+        <div class="forgot_password">
+          <p>
+            forgot your password? <a href="#" class="reset">Reset it here</a>
+          </p>
+        </div>
 
-          <div class="login_btn">
-            <button class="btn">
-              <small>Login</small>
-            </button>
-          </div>
+        <div class="forgot_password">
+          <p>
+            Don't have an account? <a href="./signup.html" class="reset">Create here</a>
+          </p>
+        </div>
 
-          <div class="lines">
-            <div class="line_1"></div>
-            <p>Or continue with</p>
-            <div class="line_2"></div>
-          </div>
+        <div class="login_btn">
+          <button class="btn">
+            <p>Login</p>
+          </button>
+        </div>
 
-          <div class="login_with_google">
-            <button class="g_btn">
-              <i class="fa-brands fa-google"></i>
-              <small>Login/Sign-Up with Google</small>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </body>
+        <div class="lines">
+          <div class="line_1"></div>
+          <p>Or continue with</p>
+          <div class="line_2"></div>
+        </div>
+
+        <div class="login_with_google">
+          <button class="g_btn">
+            <!-- <i class="fa-brands fa-google"></i> -->
+            <p>Login with Google</p>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
 </html>
