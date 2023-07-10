@@ -920,6 +920,10 @@ nav .closebtn {
         font-size: 2.3em;
     }
 
+    header .container {
+        padding: 0%;
+    }
+
     .hired-img {
         grid-column: 1/7;
     }
